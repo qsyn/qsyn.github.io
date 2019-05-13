@@ -10,21 +10,21 @@
 	
 	<meta name="google-site-verification" content="fMs4lKJ0bFuDWMrjgxnQcbVJXWb2ZwntJSp69k2ZZ6g" />
 	
-    <link rel="canonical" href="https://qsyn.github.io./">
-    <link rel="img/favicon.ico">
+    <link rel="canonical" href="https://qsyn.github.io./gettingStarted/">
+    <link rel="../img/favicon.ico">
 
     
-    <title>Home - Open Qsyn</title>
+    <title>Documentation - Open Qsyn</title>
     
 
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
     <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
-    <link href="css/bootstrap-custom.min.css" rel="stylesheet">
-    <link href="css/base.min.css" rel="stylesheet">
-    <link href="css/cinder.min.css" rel="stylesheet">
-    <link href="css/highlight.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../css/base.min.css" rel="stylesheet">
+    <link href="../css/cinder.min.css" rel="stylesheet">
+    <link href="../css/highlight.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -46,7 +46,7 @@
      
 </head>
 
-<body class="homepage" >
+<body>
 
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
@@ -64,7 +64,7 @@
 
             <!-- Main title -->
 
-            <a class="navbar-brand" href=".">Open Qsyn</a>
+            <a class="navbar-brand" href="..">Open Qsyn</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -73,14 +73,14 @@
                 <ul class="nav navbar-nav">
                 
                 
-                    <li class="active">
-                        <a href=".">Home</a>
+                    <li >
+                        <a href="..">Home</a>
                     </li>
                 
                 
                 
-                    <li >
-                        <a href="gettingStarted/">Documentation</a>
+                    <li class="active">
+                        <a href="./">Documentation</a>
                     </li>
                 
                 
@@ -92,13 +92,13 @@
                             <i class="fas fa-search"></i> Search
                         </a>
                     </li>
-                    <li class="disabled">
-                        <a rel="prev" >
+                    <li >
+                        <a rel="prev" href="..">
                             <i class="fas fa-arrow-left"></i> Previous
                         </a>
                     </li>
-                    <li >
-                        <a rel="next" href="gettingStarted/">
+                    <li class="disabled">
+                        <a rel="next" >
                             Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
@@ -115,68 +115,26 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#how-to-use">How to use</a></li>
-            <li class="second-level"><a href="#installation">Installation</a></li>
-                
-            <li class="second-level"><a href="#demo">Demo</a></li>
-                
-            <li class="second-level"><a href="#documentation">Documentation</a></li>
-                
-        <li class="first-level "><a href="#status">Status</a></li>
-        <li class="first-level "><a href="#contact">Contact</a></li>
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<p><img class="plain"  src="logo.png"; style=border:none; box-shadow:none;/></p>
-<hr />
-<p class="lead">A modern open source toolbox for QFT control synthesis.</p>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
-<p><strong>Quantitative Feedback Theory (QFT)</strong> is a frequency domain robust control
-design technique, introduced by <a href="https://en.wikipedia.org/wiki/Isaac_Horowitz">Isaac Horowitz</a>. 
-If you were looking for Quantum Field Theory you are in the wrong place!</p>
-<p><strong>Open Qsyn</strong> is a Matlab based, object oriented, free open 
-source toolbox to aid QFT control synthesis. It replaces the obsolete
-<a href="https://www.math.kth.se/optsyst/forskning/forskarutbildning/5B5782/index.html">Qsyn toolbox</a>
-developed by <a href="https://cee.technion.ac.il/members/per-olof-gutman/">Per-Olof Gutman</a>
-and co-workers in the 90s.
-The development is supported by Prof. Gutman himself, and all 
-reused code is done with his premission. </p>
-<h2 id="how-to-use">How to use</h2>
-<h3 id="installation">Installation</h3>
-<ol>
-<li><a href="https://github.com/qsyn/openQsyn/archive/master.zip">Download</a> and unzip the
-   recent version (or fork the <a href="https://github.com/qsyn/openQsyn.git">repo</a>)
-   into a new folder named <code>&lt;folderName&gt;</code>   </li>
-<li>Add  <code>&lt;folderName&gt;</code> to your Matlab path</li>
-<li>Run <code>oqsyn_ini</code> to initiate the toolbox</li>
-</ol>
-<h3 id="demo">Demo</h3>
-<p>A quick introductory example is provided by the live script <code>exmaple.mlx</code>.
-This exmaple will guide you through the steps of SISO design: definning a 
-new plant and design specifications, computaing templates and bounds, 
-designing a feedback compensator and a pre-filter. </p>
-<h3 id="documentation">Documentation</h3>
-<p><strong>Open Qsyn</strong> uses Matlab based documentation, thus viewd using standard Matlab 
-<code>help</code> and <code>doc</code> commands.</p>
-<ul>
-<li>General documentation is accsessed by typing <code>help &lt;folderName&gt;</code>, with 
-  <code>&lt;folderName&gt;</code> Open Qsyn installation folder. </li>
-<li>Documentation for a functions is viewd by typing <code>help &lt;functionName&gt;</code>.</li>
-<li>Documentation for a class is viewed by typing <code>help &lt;className&gt;</code>.</li>
-<li>Documentation for a method is viewed by typing <code>help &lt;className/methodName&gt;</code>. </li>
-</ul>
-<h2 id="status">Status</h2>
-<p><strong>Open Qsyn</strong> toolbox is under construction, 
-but it can already be used for SISO QFT design for plants with parametric 
-uncertainty, unstructuerd uncertainty, and uncertain delay. 
-Feel free to open issues in order to report bugs or suggests new features. 
-Just check the GitHub <a href="https://github.com/qsyn/openQsyn/issues">issues section</a>
-first :). </p>
-<p>The toolbox is regulary tested on Matlab 2015b,2017a,2017b. 
-For complete functionality the Control Systems Toolbox is required. </p>
-<h2 id="contact">Contact</h2>
-<p>rubindan115 at gmail dot com</p></div>
+<p><b>Open Qsyn</b> is a modern open source toolbox for <i>QFT</i> control <i>synthesis</i>.</p>
+
+<p><i>Quantitative Feedback Theory</i> (QFT) is a frequency domain robust control design technique, introduced by Isaac Horowitz.</p>
+
+<p>This toolbox is the successor of the original <i>Qsyn</i> toolbox, developed in the 90s. It provides a modern and completely free open source toolbox to aid QFT control synthesis. The development is supported by the author of the original <i>Qsyn</i> toolbox, Prof. Per-Olof Gutman, and all reused code is done under his premission.</p>
+
+<p>Typical QFT design is doen according to the following steps:</p>
+
+<div><ol>
+    <li><a href="matlab:web('doc_modeling.html')">Modeling of the uncertain plants</a></li>
+    <li><a href="matlab:web('doc_tplcomp.html')">Computating  templates</a> -- the set of all plant responses over the Nichols chart at specified frequencies</li>
+    <li>Compute bounds over the Nichols chart that give constraint to the loop shaping of the open-loop <span class="MathJax_Preview"><img src="landingPage_eq10553154553483153839.png" alt="$L(s) = P(s) K(s)$"></span><script type="math/tex">L(s) = P(s) K(s)</script></li>
+    <li>Design a feedback compensator <span class="MathJax_Preview"><img src="landingPage_eq12634969238238097644.png" alt="$K(s)$"></span><script type="math/tex">K(s)</script> which satisfy the bounds</li><li>Design a pre-filter to shape the reference such that closed-loop sepcifications are satisfied</li>
+</ol></div></div>
         
         
     </div>
@@ -193,13 +151,13 @@ For complete functionality the Control Systems Toolbox is required. </p>
         
     </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap-3.0.3.min.js"></script>
-    <script src="js/highlight.pack.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script>var base_url = "."</script>
+    <script>var base_url = ".."</script>
     
-    <script src="js/base.js"></script>
-    <script src="search/main.js"></script>
+    <script src="../js/base.js"></script>
+    <script src="../search/main.js"></script>
 
     <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -267,8 +225,3 @@ For complete functionality the Control Systems Toolbox is required. </p>
     </body>
 
 </html>
-
-<!--
-MkDocs version : 1.0.4
-Build Date UTC : 2019-05-13 12:45:12
--->
